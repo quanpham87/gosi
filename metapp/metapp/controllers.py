@@ -20,6 +20,7 @@ session = api_manager.session
 @app.route('/')
 @app.route('/about')
 @app.route('/blog')
+@app.route('/login')
 def basic_pages(**kwargs):
 	return make_response(open('metapp/templates/index.html').read())
 
@@ -49,6 +50,4 @@ def favicon():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
-
-
 

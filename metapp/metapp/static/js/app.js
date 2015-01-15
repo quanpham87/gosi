@@ -12,6 +12,10 @@ angular.module('MetApp', ['metAppServices'])
 			templateUrl: 'static/partials/about.html',
 			controller: AboutController
 		})
+		.when('/login', {
+		    templateUrl: 'static/partials/login.html',
+			controller: LoginController
+		})
 		.when('/post', {
 			templateUrl: 'static/partials/post-list.html',
 			controller: PostListController
